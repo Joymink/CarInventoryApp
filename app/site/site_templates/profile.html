@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <section class="bg-dark container-fluid text-light text-center shadow mt-3 pt-3">
+        <div class="container-fluid p-5 bg-dark">
+            <div class="row">
+                <div class="d-md-flex bg-dark align-items-center justify-content-evenly">
+                    <h1 class="col text-center">{{ current_user.first_name}}'s user profile</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center">
+    <div class="container p-10">
+        <div class="row"><br>
+            <h3 class="p-5 justify-content-center">Take a look at your Profile</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Email: {{ current_user.email }}</li>
+                <li class="list-group-item hidden">Token: {{ current_user.token }} </li> 
+            </ul>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            
+            <div class="container-fluid p-10">
+                <img src="../../static/images/gabriel-gurrola-u6BPMXgURuI-unsplash.jpg" class="profile-img d-flex align-items-center justify-content-center p-50 img-fluid" alt="">
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    </section>
+{% endblock %}

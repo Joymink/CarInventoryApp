@@ -1,0 +1,25 @@
+*,*:before,*::after{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: inherit; 
+  }
+
+body {
+  padding-top: 50px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 3vh;
+  color: white;
+}
+.profile-img{
+  width: 90vw;
+  height: auto;
+  z-index: -1;
+
+}
+
